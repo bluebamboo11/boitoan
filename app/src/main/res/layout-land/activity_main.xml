@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    style="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff99ff"
+    tools:context="com.example.blue.baithuchanh03.MainActivity">
+
+    <LinearLayout
+        style="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="236dp"
+            android:layout_height="380dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="270dp"
+            android:background="#ff99ff"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_weight="0.01"
+                android:hint="Tên Nam"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="0.01"
+                android:hint="Tên Nữ"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/Widget.AppCompat.Light.ActionMode.Inverse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tính Toán" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:text="Kết Quả" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageView9">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="384dp"
+            android:layout_height="235dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            app:srcCompat="@drawable/icon"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/textSo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="101dp"
+            android:layout_marginRight="101dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:textColor="#ff00"
+            android:textSize="35dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
